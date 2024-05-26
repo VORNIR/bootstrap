@@ -1,4 +1,4 @@
-name: CSS (node-sass)
+name:Vorn.Aaas.Client.Scss
 
 on:
   push:
@@ -49,4 +49,4 @@ jobs:
           fi
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.3.3
-          
+          path: dist-sass/css
