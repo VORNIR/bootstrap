@@ -43,11 +43,13 @@ jobs:
             echo "$SASS_VARS_FOUND"
             exit 1
           fi
-      - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v4.3.3
-        with:
-          path: dist-sass/css
       - name: Auto Minify
         uses: nizarmah/auto-minify@v3.0.0
         with:
           directory: dist-sass/css
+          output: dist-sass/css/min
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4.3.3
+        with:
+          name: Vorn.Aaas.Client.Bootstrap
+          path: dist-sass/css/min
