@@ -51,5 +51,5 @@ jobs:
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.3.3
         with:
-          name: Vorn.Aaas.Client.Bootstrap
+          name: Vorn.Aaas.Client.Bootstrap.Css
           path: dist-sass/css/min 
