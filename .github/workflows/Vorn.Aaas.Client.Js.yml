@@ -36,8 +36,8 @@ jobs:
       - name: Run dist
         run: npm run js
         
-      - name: Auto Minify
-        uses: nizarmah/auto-minify@v3.0.0
+      - name: Minify
+        uses: devatherock/minify-js@v3.1.0
         with:
           directory: dist/js
           output: dist/js/min
